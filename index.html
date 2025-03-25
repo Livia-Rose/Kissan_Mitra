@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - Farmer Advisory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AgriSmart</h1>
+        <p>Empowering small farmers with AI-driven solutions</p>
+        <form action="agriSmart" method="POST">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Siddharthnagar" required><br>
+
+            <label for="landSize">Land Size (acres):</label>
+            <input type="number" id="landSize" name="landSize" step="0.1" min="0.1" required><br>
+
+            <label for="soilCondition">Soil Condition:</label>
+            <select id="soilCondition" name="soilCondition" required>
+                <option value="Low Fertility">Low Fertility</option>
+                <option value="Moderate Fertility">Moderate Fertility</option>
+                <option value="High Fertility">High Fertility</option>
+            </select><br>
+
+            <button type="submit">Get Advice</button>
+        </form>
+    </div>
+</body>
+</html>
